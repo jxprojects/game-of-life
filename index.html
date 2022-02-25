@@ -1,0 +1,136 @@
+<html lang="en">
+<head>
+
+    <!-- My First JS code-->
+    <script>
+        var links = ["jxprojects.github.io/home/"];
+
+        openLink = function () {
+            var randIdx = Math.random() * links.length;
+            randIdx = parseInt(randIdx, 10);
+            var link = 'http://' + links[randIdx];
+            window.open(link);
+        };
+    </script>
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hello world</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <!-- ICON IN HEAD -->
+    <link rel="icon" href="images/logo.PNG">
+</head>
+<body>
+    <!-- BAR WITH "WELCOME", PAGE OPTS -->
+    <div class="sel">
+        <a href="../home"><img src="images/logo.PNG"></a>
+        <button onclick="openLink();">A Project</button>
+        <a href="../about">About</a>
+        <hr>
+    </div>
+
+    <div class="main">
+        <h1>Conway's Game of Life</h1>
+        <hr id="crossline">
+        <p class="da"><mark>Julia Kozak - Feb 2022</mark></p>
+        <p>
+            I was introduced to Conway's Game of Life sometime last year, 
+            and I took a recent interest in it while learning C++. It's 
+            based on a cellular automaton structure which, simply put, 
+            is a set of cells given some possible states and some set of 
+            instructions to follow based on their state.
+        </p>
+        <p>
+            With this idea, Conway's Game of Life is meant to simulate life 
+            structures with rules representing underpopulation and overpopulation. In
+            a grid of cells, each cell's state is dependent on the cell's "neighbors," 
+            which are the eight cells surrounding it. In this model, each cell has two 
+            states: alive or dead. Each cell progresses through generations in a certain 
+            state depending on its number of living neighbors at a given point, with rules 
+            as follows:
+        </p>
+        <p class="bigtab">
+            * Alive with &lt 2 living neighbors -> dead, by underpopulation <br>
+            * Alive with > 3 living neighbors -> dead, by overpopulation <br>
+            * Alive with 2 or 3 living neighbors -> alive <br>
+            * Dead with 3 living neighbors -> alive <br>
+            * Otherwise, dead cell stays dead
+        </p>
+        <p id="cont">
+            Conway's cellular automaton is pretty cool in itself, and all trials eventually 
+            stabilize into having just a few different periodic structures, such as:
+        </p>
+        <div class="imgq">
+            <img src="images/still.png">
+            <img src="images/pdtwo.gif">
+            <img src="images/pulse.gif">
+            <img src="images/glidergun.gif">
+        </div>
+        <p id="cont">
+            The first shows still structures, like a 2x2 square. The second shows 
+            structures which oscillate with period two. The third has period three. 
+            And the last is the famous gosper glider gun which produces glider structures 
+            that move down and right.
+        </p>
+        <p>
+            These are screenshots/gifs made from my program, which runs in the terminal
+            and displays alive and dead cells with text background colors, grey/white meaning
+            alive.
+        </p>
+        <p>
+            What I found most interesting was that, with the random arrangements of live 
+            cells that my program would produce, it seemed near impossible to track what
+            was really going on until the very end, when these recognizable structures
+            would form. And upon research, I couldn't find any mathematical model or algorithm
+            that could otherwise predict what would happen to a given grid of cells in Conway's
+            Game of Life. Cellular automata are mathematical models on their own, and they're 
+            reflective of how computer processing works.
+        </p>
+        <p>
+            Take the gosper glider gun structure, for instance. It outputs a glider every 
+            30 generations, and we can say each traveling glider is analogous to a '1' in 
+            binary, and the lack of presence of a glider is a '0'. It's possible to arrange 
+            two glider guns perpendicular to each other such that each of their gliders 
+            annihilate each other, and that is enough to construct all the logic gates that 
+            computers use, 'and,' 'or,' and 'not,' as well as switches. This makes the model 
+            Turing complete, meaning these gates can be chained together to mimic any binary 
+            operation that computers do. 
+        </p>
+        <p>
+            It's also interesting to observe the growth patterns with different cell
+            instructions, such as when you change the life condition to one neighbor, 
+            or you don't allow death for less than two neighbors: <br>
+            <img id="oner" src="images/one.gif">
+            <img id="threer" src="images/three.gif">
+        </p>
+        <p id="sources">
+            Here's a video of an 8-bit computer computing fibonacci numbers, made within Conway's model by Nicolas Loizeau in 2016 (YouTube): <a href="https://youtu.be/8unMqSp0bFY">this</a> <br> <br>
+            And here's Conway's Game of Life within Conway's Game of Life, via Phillip Bradbury (YouTube): <a href="https://youtu.be/xP5-iIeKXE8">this</a> <br> <br>
+            3D cellular automata, cubes.io: <a href="http://cubes.io/">this</a>
+            <br> <br> Sources: <br>
+            <p class="bigtab">
+                * Berto, Francesco, and Jacopo Tagliabue. “Cellular Automata.” Stanford Encyclopedia of Philosophy. Stanford University, August 22, 2017. <a href="https://plato.stanford.edu/entries/cellular-automata/">https://plato.stanford.edu/entries/cellular-automata/</a>. <br>
+                * “Elementary Cellular Automaton.” from Wolfram MathWorld. Accessed February 25, 2022. <a href="https://mathworld.wolfram.com/ElementaryCellularAutomaton.html">https://mathworld.wolfram.com/ElementaryCellularAutomaton.html</a>. 
+            </p>
+        </p>
+    </div>
+    
+
+
+    <footer>
+        <p> Authors: Julia Kozak and Maxwell Ito</p>
+        <a href="mailto:jules351w@gmail.com"> mail </a>
+    </footer>
+    
+    
+ 
+</body>
+</html>

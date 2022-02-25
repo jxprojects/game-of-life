@@ -1,0 +1,89 @@
+squares[2][2] = 1;
+    squares[2][3] = 1;
+    squares[3][2] = 1;
+    squares[3][3] = 1;
+
+    squares[7][2] = 1;
+    squares[6][3] = 1;
+    squares[6][4] = 1;
+    squares[8][3] = 1;
+    squares[8][4] = 1;
+    squares[7][5] = 1;
+
+    squares[3][6] = 1;
+    squares[2][7] = 1;
+    squares[2][8] = 1;
+    squares[3][9] = 1;
+    squares[4][9] = 1;
+    squares[4][7] = 1;
+    squares[5][8] = 1;
+
+    squares[10][12] = 1;
+    squares[10][13] = 1;
+    squares[11][12] = 1;
+    squares[11][14] = 1;
+    squares[12][13] = 1;
+
+    squares[5][12] = 1;
+    squares[6][11] = 1;
+    squares[6][13] = 1;
+    squares[7][12] = 1;
+
+    squares[9][8] = 1;
+    squares[10][9] = 1;
+    squares[10][7] = 1;
+    squares[11][8] = 1;
+
+    squares[19][3] = 1;
+    squares[19][4] = 1;
+    squares[18][2] = 1;
+    squares[17][2] = 1;
+    squares[16][3] = 1;
+    squares[17][4] = 1;
+    squares[18][5] = 1;
+
+    squares[12][2] = 1;
+    squares[13][2] = 1;
+    squares[12][3] = 1;
+    squares[13][3] = 1;
+
+    squares[14][7] = 1;
+    squares[14][8] = 1;
+    squares[15][7] = 1;
+    squares[15][9] = 1;
+    squares[16][8] = 1;
+
+    squares[2][14] = 1;
+    squares[2][15] = 1;
+    squares[3][14] = 1;
+    squares[3][15] = 1;
+
+    squares[4][18] = 1;
+    squares[5][17] = 1;
+    squares[5][19] = 1;
+    squares[6][17] = 1;
+    squares[6][19] = 1;
+    squares[7][18] = 1;
+
+    squares[11][17] = 1;
+    squares[10][18] = 1;
+    squares[10][19] = 1;
+    squares[11][20] = 1;
+    squares[12][20] = 1;
+    squares[12][18] = 1;
+    squares[13][19] = 1;
+
+    squares[19][19] = 1;
+    squares[19][18] = 1;
+    squares[18][19] = 1;
+    squares[18][18] = 1;
+
+    squares[19][11] = 1;
+    squares[18][10] = 1;
+    squares[18][12] = 1;
+    squares[17][11] = 1;
+
+    squares[17][15] = 1;
+    squares[16][14] = 1;
+    squares[16][16] = 1;
+    squares[15][15] = 1;

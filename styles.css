@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'IBM Plex Mono', monospace;
+    background-color: white;
+    background-size: cover;
+    width: 1200px;
+}
+.sel h1 {
+    margin: 0;
+    font-weight: 400;
+    padding-top: 60px;
+    font-size: 250%;
+    color: white;
+    
+    text-align: center;
+}
+.sel {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: rgb(1, 1, 1, 0.85);
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 10px;
+}
+.sel li {
+    display: inline-block; /* NEW */
+}
+.sel a{
+    font-weight: 100;
+    color: white;
+    border: none;
+     /* aspect must apply to innermost */
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.sel button {
+    font-weight: 100;
+    padding: 0;
+    border: none;
+    background: none;
+    text-decoration: underline;
+    font-size: 95%;
+    font-family: 'IBM Plex Mono', monospace;
+    color: white;
+
+}
+.sel img{
+    max-width: 14px;
+}
+.sel hr{
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.076);
+    border-color: rgba(0, 0, 0, 0.0);
+    
+}
+
+.projbar a {
+    margin-bottom: 10px;
+    
+    margin-left: 1%;
+    display: block;
+    text-decoration: none;
+    width: 19.6%;
+    height: 100px;
+    border-radius: 2px;
+}
+.projbar h3 {
+    font-size: 10px;
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+}
+.projbar h4 {
+    height: 1em;
+    font-style: italic;
+    font-weight: 300;
+    font-size: x-small;
+    margin-left: 8px;
+    margin-right: 8px;
+    color: rgb(129, 129, 129);
+    margin-top: 3px;
+}
+footer {
+    text-align: center;
+    color:rgba(150, 150, 150);
+    margin-top: 100px;
+    padding: 0;
+    font-size: 10px;
+}
+footer p {
+    margin-bottom: 0;
+}
+footer a {
+    margin-top: -8px;
+}
+
+
+.main h1 {
+    font-style: italic;
+    margin-left: 20%;
+    font-weight: 200;
+}
+.main .da {
+    text-indent: 0;
+    margin-left: 20%;
+    font-weight: 100;
+    margin-top: 20px;
+    font-size: 15px;
+}
+.main p {
+    margin-left: 20%;
+    margin-right: 20%;
+    font-weight: 100;
+    font-size: 12px;
+    text-indent: 40px;
+}
+.main .bigtab {
+    text-indent: 0;
+    margin-left: 25%;
+    font-weight: 200;
+}
+.main a {
+    color: blue;
+}
+#crossline {
+    margin-right: 20%;
+    margin-left: 56%;
+    margin-top: -40px;
+}
+#cont {
+    text-indent: 0;
+}
+mark {
+    padding: 2px;
+    background-color: rgb(1, 1, 1, 0.85);
+    color: white;
+}
+
+.imgq {
+    margin-left: 20%;
+    display: block;
+}
+.imgq img {
+    width: 170px;
+}
+#oner {
+    width: 355px;
+}
+#threer {
+    width: 355px;
+}
+#sources {
+    text-indent: 0;
+    font-weight: 300;
+}
