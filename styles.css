@@ -4,7 +4,7 @@ body {
     font-family: 'IBM Plex Mono', monospace;
     background-color: white;
     background-size: cover;
-    width: 1200px;
+    width: 900px;
 }
 .sel h1 {
     margin: 0;
@@ -21,7 +21,7 @@ body {
     text-align: center;
     background-color: rgb(1, 1, 1, 0.85);
     margin-left: 20%;
-    margin-right: 20%;
+    margin-right: 0%;
     padding-top: 10px;
 }
 .sel li {
@@ -71,7 +71,7 @@ body {
 }
 .main p {
     margin-left: 20%;
-    margin-right: 20%;
+    margin-right: 0%;
     font-weight: 100;
     font-size: 12px;
     text-indent: 40px;
@@ -85,8 +85,8 @@ body {
     color: blue;
 }
 #crossline {
-    margin-right: 20%;
-    margin-left: 56%;
+    margin-right: 0%;
+    margin-left: 66%;
     margin-top: -40px;
 }
 #cont {
@@ -104,6 +104,9 @@ mark {
 }
 .imgq img {
     width: 170px;
+}
+.imgp {
+    margin-left: 20%;
 }
 #oner {
     width: 355px;
@@ -126,7 +129,7 @@ mark {
     font-size: 12px;
     font-weight: 300;
     margin-left: 20%;
-    margin-right: 20%;
+    margin-right: 0%;
 }
 footer img {
     margin-top: 10px;
@@ -148,6 +151,8 @@ footer a {
     margin-top: 8px;
 }
 
+
+
 @media screen and (max-width:600px) {
     body {
         margin: 0;
@@ -157,27 +162,16 @@ footer a {
         background-size: cover;
         width:auto;
     }
-    canvas {
-        margin-top: -740px;
-        margin-left: 15px;
-    }
-    .sel h1 {
-        margin: 0;
-        font-weight: 400;
-        padding-top: 60px;
-        font-size: 150%;
-        color: white;
-        text-align: center;
-    }
+   
     .sel {
         padding: 0;
         margin: 0;
         margin-top: 0px;
-        padding-top: 20px;
         text-align: center;
         background-color: rgb(1, 1, 1, 0.85);
         margin-left: 3%;
         margin-right: 3%;
+        padding-top: 20px;
     }
     .sel a {
         font-size: 70%;
@@ -188,44 +182,58 @@ footer a {
     .sel img {
         max-width: 10px;
     }
-    .main {
-        margin-left: 15px;
-    }
     .main h1 {
-        margin-left: 0;
+        margin-left: 15px;
+        font-size: 30px;
     }
-    #crossline {
-        background-color: rgba(0, 0, 0, 0);
-        border-color: rgba(0, 0, 0, 0);
-    }
-    .main p {
-        font-size: 60%;
-        margin-right: 15px;
-        margin-left: 0px;
-        text-indent: 5px;
-    }
-    .main .da {
-        margin-left: 0;
-    }
-    .main .bigtab {
-        margin-left: 10px;
+    .imgq {
+        margin-left: 50px;
     }
     .imgq img {
         margin-top: 10px;
-        margin-left: -15;
+        margin: 10px;
+        
         float: center;
     }
-    #oner {
-        margin-left: 10px;
-        width: 90%;
-        float: center;
-        margin-top: 10px;
+    .main p {
+        font-size: 13px;
+        margin-right: 15px;
+        margin-left: 25px;
     }
-    #threer {
-        width: 90%;
-        margin-left: 10px;
-        float: center;
+    .imgp {
+        margin-left: 50px;
+    }
+    .imgp img {
+        margin-bottom: 10px;
+    }
+    .main .bigtab {
+        margin-left: 40px;
+    }
+    .main .da {
+        margin-left: 25px;
+        margin-top: 25px;
+    }
+    .pro {
+        margin-left: 5%;
+        margin-right: 5%;
+    
+    }
+    .pro img {
+        width: 100%;
+        border: 3px solid rgb(1, 1, 1, 0.85);
+        border-radius: 10px;
+    }
+    .pro a {
+        display: block;
+        border-radius: 5px;
+        text-decoration: none;
         margin-top: 10px;
+        margin-left: 0px;
+        background: rgb(200, 200, 200, 0.3);
+        width: 102%;
+        height: auto;
+        color: rgb(1, 1, 1, 0.85);
+        margin-bottom: 5px;
     }
     footer {
         margin: 0;
@@ -233,14 +241,14 @@ footer a {
         border-radius: 5px;
         color:rgb(1, 1, 1, 0.85);
         margin-top: 0px;
-        font-size: 7px;
+        font-size: 12px;
         font-weight: 300;
         margin-left: 15px;
         margin-right: 15px;
     }
     footer img {
         margin-top: 0px;
-        width: 3%;
+        width: 8px;
     }
     footer p {
         margin: 0;
@@ -248,10 +256,13 @@ footer a {
     }
     .lc {
         margin-left: 40%;
-        margin-top: -27;
+        margin-top: -47;
     }
     #xtra {
         margin-top: 0px;
+    }
+    #crossline {
+        border-color:rgba(0, 0, 0, 0.0);
     }
     .sources {
         margin-right: 15px;
